@@ -12,6 +12,7 @@ def driver():
     
     driver.quit
     
+# Verifies that the homepage loads correctly and displays the expected title
 def test_title(driver):
     driver.get("https://www.tamziy.com")
     assert "tamziy" in driver.title
